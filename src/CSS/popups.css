@@ -1,0 +1,108 @@
+p {
+  cursor: pointer;
+}
+p:hover {
+  transform: scale(1.1);
+}
+/*  */
+.popCont {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.poptitle {
+  position: absolute;
+}
+/*  */
+/* -------< all boxes >------------------------- */
+.boxOne, .boxTwo, .boxThree, .boxFour {
+  z-index: -999;
+  opacity: 0;
+  position: relative;
+  padding: 2rem;
+  height: auto;
+  width: 200px;
+  border: solid 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4%;
+}
+/* ----< all boxes::after >--- */
+.boxOne::after, .boxTwo::after, .boxThree::after, .boxFour::after {
+  position: relative;
+  display: block;
+  z-index: -999;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.15);
+  content: ">";
+}
+/* ----< all boxes-appear >-------- */
+.boxOne.appear, .boxTwo.appear, .boxThree.appear, .boxFour.appear {
+  z-index: 222;
+  opacity: 1;
+}
+/* -------------------------------- */
+/* --------popup box-1------------- */
+.boxOne {
+  left: -350px;
+  top: 430px;
+}
+.boxOne::after {
+  top: -165px;
+  left: 107px;
+  animation: point-right 1.25s infinite;
+}
+@keyframes point-right {
+  from {left: 107px;opacity: 0;}
+  50% {left: 122px;opacity: 1;}
+  to {left: 107px;opacity: 0;}
+}
+/* -----------box 2---------------------- */
+.boxTwo {
+  left: -70px;
+  top: 275px;
+}
+.boxTwo::after {
+  transform: rotate(270deg);
+  top: -162px;
+  left: 32px;
+  animation: point-up 1.25s infinite;
+}
+@keyframes point-up {
+  from {top: -162px;opacity: 0;}
+  50% {top: -177px;opacity: 1;}
+  to {top: -162px;opacity: 0;}
+}
+/* ------------box 3-------------------- */
+.boxThree {
+  left: 80px;
+  top: -275px;
+}
+.boxThree::after {
+  transform: rotate(90deg);
+  top: 65px;
+  left: -41px;
+  animation: point-down 1.25s infinite;
+}
+@keyframes point-down {
+  from {top: 65px;opacity: 0;}
+  50% {top: 80px;opacity: 1;}
+  to {top: 65px;opacity: 0;}
+}
+/* -----------box 4----------------------- */
+.boxFour {
+  left: 350px;
+  top: -450px;
+}
+.boxFour::after {
+  transform: rotate(180deg);
+  top: -28px;
+  left: -108px;
+  animation: point-left 1.25s infinite;
+}
+@keyframes point-left {
+  from {left: -108px;opacity: 0;}
+  50% {left: -123px;opacity: 1;}
+  to {left: -108px;opacity: 0;}
+}

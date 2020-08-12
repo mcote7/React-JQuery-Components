@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 import $ from 'jquery';
+import '../CSS/popups.css';
 
-const Main = () => {
+const Popups = () => {
   useEffect(()=> {
     $("#hoverone").mouseenter(function(){
         $("#popone").addClass(" appear")
@@ -44,8 +45,8 @@ const Main = () => {
       })
   })
   return (
-    <div className="mainCont">
-      <h1 className="main">
+    <div className="popCont">
+      <h1 className="poptitle">
         <span id="hoverone">hover</span>&nbsp;
         <span id="hovertwo">over&nbsp;</span>
         <span id="hoverthree">these</span>&nbsp;
@@ -75,4 +76,4 @@ const Main = () => {
   );
 }
 
-export default Main;
+export default Popups;
