@@ -2,7 +2,9 @@ p {
   cursor: pointer;
 }
 p:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  background-color: rgba(219, 199, 255, 0.25);
+  text-transform: uppercase;
 }
 /*  */
 .popCont {
@@ -26,7 +28,8 @@ p:hover {
   height: auto;
   width: 200px;
   border: solid 2px rgba(0, 0, 0, 0.1);
-  border-radius: 4%;
+  background-color: rgba(219, 199, 255, 0.15);
+  border-radius: 0.35rem;
 }
 /* ----< all boxes::after >--- */
 .boxOne::after, .boxTwo::after, .boxThree::after, .boxFour::after {

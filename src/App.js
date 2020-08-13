@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Popups from './components/Popups';
+import Main from './components/Main';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="container-fluid">
         <Navbar/>
         <Popups/>
+        <Main/>
       </div>
     </div>
   );
