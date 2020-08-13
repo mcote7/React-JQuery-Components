@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/React-JQuery-Components/static/css/main.1b563f07.chunk.css",
-    "main.js": "/React-JQuery-Components/static/js/main.823e3234.chunk.js",
-    "main.js.map": "/React-JQuery-Components/static/js/main.823e3234.chunk.js.map",
+    "main.css": "/React-JQuery-Components/static/css/main.ced3c202.chunk.css",
+    "main.js": "/React-JQuery-Components/static/js/main.639149ef.chunk.js",
+    "main.js.map": "/React-JQuery-Components/static/js/main.639149ef.chunk.js.map",
     "runtime-main.js": "/React-JQuery-Components/static/js/runtime-main.aaeb928d.js",
     "runtime-main.js.map": "/React-JQuery-Components/static/js/runtime-main.aaeb928d.js.map",
     "static/css/2.f3cffc9e.chunk.css": "/React-JQuery-Components/static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.ad89de1b.chunk.js": "/React-JQuery-Components/static/js/2.ad89de1b.chunk.js",
-    "static/js/2.ad89de1b.chunk.js.map": "/React-JQuery-Components/static/js/2.ad89de1b.chunk.js.map",
+    "static/js/2.4bbb8431.chunk.js": "/React-JQuery-Components/static/js/2.4bbb8431.chunk.js",
+    "static/js/2.4bbb8431.chunk.js.map": "/React-JQuery-Components/static/js/2.4bbb8431.chunk.js.map",
     "index.html": "/React-JQuery-Components/index.html",
-    "precache-manifest.d26af7e4b194fb43ff9a98f5893dbd80.js": "/React-JQuery-Components/precache-manifest.d26af7e4b194fb43ff9a98f5893dbd80.js",
+    "precache-manifest.0304502770ea513b56dbb0cf1381dd91.js": "/React-JQuery-Components/precache-manifest.0304502770ea513b56dbb0cf1381dd91.js",
     "service-worker.js": "/React-JQuery-Components/service-worker.js",
     "static/css/2.f3cffc9e.chunk.css.map": "/React-JQuery-Components/static/css/2.f3cffc9e.chunk.css.map",
-    "static/css/main.1b563f07.chunk.css.map": "/React-JQuery-Components/static/css/main.1b563f07.chunk.css.map",
-    "static/js/2.ad89de1b.chunk.js.LICENSE.txt": "/React-JQuery-Components/static/js/2.ad89de1b.chunk.js.LICENSE.txt"
+    "static/css/main.ced3c202.chunk.css.map": "/React-JQuery-Components/static/css/main.ced3c202.chunk.css.map",
+    "static/js/2.4bbb8431.chunk.js.LICENSE.txt": "/React-JQuery-Components/static/js/2.4bbb8431.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.aaeb928d.js",
     "static/css/2.f3cffc9e.chunk.css",
-    "static/js/2.ad89de1b.chunk.js",
-    "static/css/main.1b563f07.chunk.css",
-    "static/js/main.823e3234.chunk.js"
+    "static/js/2.4bbb8431.chunk.js",
+    "static/css/main.ced3c202.chunk.css",
+    "static/js/main.639149ef.chunk.js"
   ]
 }
