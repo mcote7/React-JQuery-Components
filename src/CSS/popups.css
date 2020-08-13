@@ -15,12 +15,13 @@ p:hover {
 }
 /*  */
 .popCont {
-  height: 90vh;
+  height: 160vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(241, 235, 253);
 }
 .poptitle {
   color: rgb(129, 62, 253);
@@ -28,12 +29,12 @@ p:hover {
 }
 .popsubtitle {
   position: absolute;
-  top: 450px;
+  top: 650px;
   left: 310px;
 }
 .popsubtitletop {
   position: absolute;
-  top: 300px;
+  top: 580px;
   right: 315px;
 }
 .subtitle {

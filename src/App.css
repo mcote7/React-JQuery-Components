@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 420px) {
   * {
     transform: scale(0.5);
@@ -12,18 +13,85 @@
 .row {
   margin: 0%!important;
 }
-/* ----nav dropdown icon--- */
+/* ----nav dropdown icon nav--- */
 .nav-link.dropdown-toggle::after {
   transform: rotate(-90deg);
 }
 .nav-link.dropdown-toggle.arr::after {
   transform: rotate(0deg);
 }
-/* ------------------------ */
+.bg-purp {
+  background-color: rgb(228, 215, 252)!important;
+  color: rgb(153, 101, 248)!important;
+  border-bottom: 5px solid rgb(95, 59, 161);
+}
+/* ---scroll to--- */
+.navbtn {
+  background: transparent;
+  border: transparent;
+  padding: 8px!important;
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbtn:hover {
+  color: black;
+}
+.navbtn:focus {
+  outline: none!important;
+  color: rgb(153, 101, 248);
+}
+/*  */
+/* -------main------------- */
 .mainContainer {
-  height: 100vh;
+  height: 160vh;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin: 0rem;
   padding: 0rem;
+  border-top: 10px solid rgb(207, 182, 255);
   background-color: rgb(153, 101, 248);
 }
+.leftDiv {
+  height: 50vh;
+  width: 50vh;
+  margin: 0px 10vh 0px 0px;
+  background-color: white;
+  border-radius: 1rem;
+  border: 10px solid rgb(207, 182, 255);
+  position: relative;
+  opacity: 0;
+  left: 0px;
+}
+.rightDiv {
+  height: 50vh;
+  width: 50vh;
+  margin: 0px 0px 0px 10vh;
+  background-color: white;
+  border-radius: 1rem;
+  border: 10px solid rgb(207, 182, 255);
+  position: relative;
+  opacity: 0;
+  right: 0px;
+}
+/* / */
+.slideLeft {
+  animation: slide-left 1.25s ease-out 0.25s forwards;
+}
+@keyframes slide-left {
+  from {opacity: 0; margin-right: 80vh;}
+  25% {opacity: 0.1;}
+  50% {opacity: 0.25;}
+  to {opacity: 1; margin-right: 10vh;}
+}
+.slideRight {
+  animation: slide-right 1.25s ease-out 0.25s forwards;
+}
+@keyframes slide-right {
+  from {opacity: 0; margin-left: 80vh;}
+  25% {opacity: 0.1;}
+  50% {opacity: 0.25;}
+  to {opacity: 1; margin-left: 10vh;}
+}
+

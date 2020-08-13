@@ -1,5 +1,6 @@
 import React,{ useEffect } from 'react';
 import $ from 'jquery';
+import ScrollIntoView from 'react-scroll-into-view';
 
 const Navbar = () => {
   useEffect(()=> {
@@ -18,7 +19,7 @@ const Navbar = () => {
 
 
   return (
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-purp">
     <a class="navbar-brand" href="/">REACT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,6 +45,11 @@ const Navbar = () => {
             <a class="dropdown-item" href="/">Something else here</a>
           </div>
 
+        </li>
+        <li>
+        <ScrollIntoView selector="#mike">
+          <button className="navbtn">Scroll to</button>
+        </ScrollIntoView>
         </li>
       </ul>
     </div>

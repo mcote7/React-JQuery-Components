@@ -45,12 +45,12 @@ const Popups = () => {
       })
     //----------new--------------------------------
     $("#shift").mouseenter(function(){
-      $(".popsubtitle").animate({ top: '200px' } , 'slow')
-      $(".popsubtitletop").animate({ top: '495px' }, 1200)
+      $(".popsubtitle").animate({ top: '400px' } , 'slow')
+      $(".popsubtitletop").animate({ top: '820px' }, 1200)
       })
     $("#shift").mouseleave(function(){
-      $(".popsubtitle").animate({ top: '450px' } , 'slow')
-      $(".popsubtitletop").animate({  top: '300px' }, 1200)
+      $(".popsubtitle").animate({ top: '650px' } , 'slow')
+      $(".popsubtitletop").animate({  top: '580px' }, 1200)
       })
     //--------------------------------------------
   })
