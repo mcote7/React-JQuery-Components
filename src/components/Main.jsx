@@ -4,7 +4,7 @@ import $ from 'jquery';
 const Main = () => {
   $(document).ready(function(){
     $(document).scroll(function(evt){
-    var v2 = Math.abs($('.mainContainer').position().top - $(window).height()/2);
+    var v2 = Math.abs($('.leftDiv').position().top - $(window).height()/2);
     var v1 = $(this).scrollTop();
         if( v1 > v2 ){
       console.log('in');
