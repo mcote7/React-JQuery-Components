@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () => {
   return (
-    <div className="mainContainer">
+    <div id="mike" className="mainContainer">
       
     </div>
   );

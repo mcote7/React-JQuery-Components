@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 import Popups from './components/Popups';
 import Main from './components/Main';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
       <div className="container-fluid">
