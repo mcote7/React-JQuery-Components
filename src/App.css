@@ -1,3 +1,8 @@
+@media only screen and (max-width: 420px) {
+  * {
+    transform: scale(0.5);
+  }
+}
 .App {
   text-align: center;
 }
@@ -7,8 +12,6 @@
 .row {
   margin: 0%!important;
 }
-
-
 /* ----nav dropdown icon--- */
 .nav-link.dropdown-toggle::after {
   transform: rotate(-90deg);
@@ -16,13 +19,11 @@
 .nav-link.dropdown-toggle.arr::after {
   transform: rotate(0deg);
 }
-/* --------------------------- */
-
-
+/* ------------------------ */
 .mainContainer {
   height: 100vh;
   width: 100%;
   margin: 0rem;
   padding: 0rem;
-  background-color: rgb(17, 0, 49);
+  background-color: rgb(153, 101, 248);
 }

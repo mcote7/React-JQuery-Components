@@ -1,9 +1,16 @@
+hr {
+  border-color: rgb(241, 235, 253)!important;
+}
 p {
   cursor: pointer;
+  color: rgb(153, 101, 248);
+  transition: 0.25s ease-out;
 }
 p:hover {
   transform: scale(1.15);
-  background-color: rgba(219, 199, 255, 0.25);
+  color: rgb(71, 14, 177);
+  background-color: rgb(241, 235, 253);
+  border-radius: 0.25rem;
   text-transform: uppercase;
 }
 /*  */
@@ -16,7 +23,21 @@ p:hover {
   justify-content: center;
 }
 .poptitle {
+  color: rgb(129, 62, 253);
   position: absolute;
+}
+.popsubtitle {
+  position: absolute;
+  top: 450px;
+  left: 310px;
+}
+.popsubtitletop {
+  position: absolute;
+  top: 300px;
+  right: 315px;
+}
+.subtitle {
+  color: rgb(71, 14, 177);
 }
 /*  */
 /* -------< all boxes >------------------------- */
@@ -27,8 +48,8 @@ p:hover {
   padding: 2rem;
   height: auto;
   width: 200px;
-  border: solid 2px rgba(0, 0, 0, 0.1);
-  background-color: rgba(219, 199, 255, 0.15);
+  border: solid 2px rgb(209, 185, 253);
+  background-color: rgb(230, 218, 255);
   border-radius: 0.35rem;
 }
 /* ----< all boxes::after >--- */
@@ -37,7 +58,7 @@ p:hover {
   display: block;
   z-index: -999;
   font-size: 2rem;
-  color: rgba(0, 0, 0, 0.15);
+  color: rgb(153, 101, 248);
   content: ">";
 }
 /* ----< all boxes-appear >-------- */
