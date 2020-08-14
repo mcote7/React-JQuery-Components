@@ -4,7 +4,7 @@
     transform: scale(0.5);
   }
 }
-.App {
+.app-center {
   text-align: center;
 }
 .container-fluid {
@@ -21,9 +21,10 @@
   transform: rotate(0deg);
 }
 .bg-purp {
-  background-color: rgb(228, 215, 252)!important;
+  background-color: rgb(207, 182, 255)!important;
   color: rgb(153, 101, 248)!important;
   border-bottom: 5px solid rgb(95, 59, 161);
+  box-shadow: 0 7px 18px 3px white;
 }
 /* ---scroll to--- */
 .navbtn {
@@ -51,6 +52,7 @@
   margin: 0rem;
   padding: 0rem;
   border-top: 10px solid rgb(207, 182, 255);
+  border-bottom: 10px solid rgb(207, 182, 255);
   background-color: rgb(129, 62, 253);
 }
 .leftDiv {
@@ -60,9 +62,7 @@
   background-color: white;
   border-radius: 1rem;
   border: 10px solid rgb(207, 182, 255);
-  position: relative;
   opacity: 0;
-  left: 0px;
 }
 .rightDiv {
   height: 50vh;
@@ -71,9 +71,7 @@
   background-color: white;
   border-radius: 1rem;
   border: 10px solid rgb(207, 182, 255);
-  position: relative;
   opacity: 0;
-  right: 0px;
 }
 /* / */
 .slideLeft {
@@ -95,3 +93,33 @@
   to {opacity: 1; margin-left: 10vh;}
 }
 
+/* ---api component--- */
+
+.apiContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem;
+  padding: 0rem;
+  border-bottom: 10px solid rgb(207, 182, 255);
+}
+.response {
+  height: 60vh;
+  width: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 0.25rem;
+  border: 5px solid rgb(95, 59, 161);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 4px 6px rgba(0,0,0,.25);
+  transition: 0.2s;
+}
+.response:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 4px 6px rgba(0,0,0,.1);
+}

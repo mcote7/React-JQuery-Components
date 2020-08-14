@@ -21,7 +21,7 @@ p:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(241, 235, 253);
+  background-color: white;
 }
 .poptitle {
   color: rgb(129, 62, 253);
