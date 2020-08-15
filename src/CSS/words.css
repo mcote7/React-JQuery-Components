@@ -1,0 +1,94 @@
+.newRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+  height: 80vh;
+  border-bottom: 1px solid rgb(125, 59, 247);
+  border-top: 1px solid rgb(125, 59, 247);
+}
+.colLeft, .colRight {
+  z-index: -2;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.colLeft {
+  flex-direction: column;
+}
+.colRight {
+  flex-direction: column-reverse;
+}
+.wordBoxLeft, .wordBoxRight {
+  background-color: rgb(207, 182, 255);
+  color: white;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+.wordBoxLeftb4, .wordBoxRightb4 {
+  background-image: url('../images/React-cloud.png');
+  background-size: cover;
+  background-blend-mode: luminosity;
+  animation: appear 2s;
+}
+@keyframes appear {
+  from {background-blend-mode: darken;}
+  25% {background-blend-mode: hard-light;}
+  50% {background-blend-mode: color-burn;}
+  to {background-blend-mode: normal;}
+}
+.wordBoxLeftb4::before {
+  position: relative;
+  z-index: -1;
+  color: black;
+  content: "hey there buddy here is a long string of words that will appear on scroll";
+  left: 0;
+  will-change: left;
+  animation: go-left 2s forwards;
+}
+@keyframes go-left {
+  from {left: 0;}
+  to {left: 650px;}
+}
+.wordBoxRightb4::before {
+  position: relative;
+  z-index: -1;
+  color: black;
+  content: "hey there buddy here is a long string of words that will appear on scroll";
+  left: 0;
+  will-change: left;
+  animation: go-right 2s forwards;
+}
+@keyframes go-right {
+  from {left: 0;}
+  to {left: -650px;}
+}
+.newRow2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  height: 100vh;
+}
+.colors {
+  height: 50vh;
+  width: 50vh;
+  border: 15px solid white;
+  border-radius: 0.75rem;
+  cursor: crosshair;
+}
+.colors:hover {
+  animation: scale infinite 2s linear;
+}
+@keyframes scale {
+  from {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  to {transform: scale(1);}
+}

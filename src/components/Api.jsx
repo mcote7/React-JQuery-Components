@@ -22,9 +22,7 @@ const Api = () => {
         if( v1 > v2 ){
         console.log('in');
         setLoading(true);
-        setTimeout(() => {
-          doFetch();
-        }, 500);
+        doFetch();
       }
     });
     });
