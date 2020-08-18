@@ -5,6 +5,7 @@ import Popups from './components/Popups';
 import Main from './components/Main';
 // import Api from './components/Api';
 import Words from './components/Words';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
         <Main/>
         {/* <Api/> */}
         <Words/>
+        <Footer/>
       </div>
   );
 }

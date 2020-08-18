@@ -20,7 +20,7 @@ const Api = () => {
     var v2 = Math.abs($('.response').position().top - $(window).height()/2);
     var v1 = $(this).scrollTop();
         if( v1 > v2 ){
-        console.log('in');
+        
         setLoading(true);
         doFetch();
       }
@@ -30,7 +30,7 @@ const Api = () => {
   return (
     <div className="apiContainer">
       <div className="response">
-        {loading ? <h1>loading . . .</h1> : ''}
+        {loading ? <h1>loading . . .</h1> : console.log('res', results)}
         {error.length > 0 ? <h1>error . . . </h1> : ''}
         {!loading && results.map(item => <li key={item.id}>{item.name}</li>)}
       </div>

@@ -5,21 +5,31 @@ import ScrollIntoView from 'react-scroll-into-view';
 const Navbar = () => {
   useEffect(()=> {
     $("#navbarDropdown").mouseenter(function(){
-        $("#cote").addClass(" show")
-        $("#navbarDropdown").addClass(" arr")
+        $("#cote").addClass("show")
+        $("#navbarDropdown").addClass("arr")
       })
     $("#cote").mouseenter(function(){
-        $("#cote").addClass(" show")
+        $("#cote").addClass("show")
       })
     $("#cote").mouseleave(function(){
-        $("#cote").removeClass(" show")
-        $("#navbarDropdown").removeClass(" arr")
+        $("#cote").removeClass("show")
+        $("#navbarDropdown").removeClass("arr")
       })
-  })
-
+  });
+// -----------------------------------------
+  $(window).on('scroll', function() {
+    const nav = document.getElementById("navigation");
+    const scrollHeight = $(this).scrollTop();
+    console.log( scrollHeight );
+    scrollHeight > 120 ?
+    $(nav).removeClass("navFixedTop") && $(nav).addClass("sticky-top")
+    :
+    $(nav).removeClass("sticky-top") && $(nav).addClass("navFixedTop")
+  });
+// ------------------------------------------------------------------------
 
   return (
-  <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-purp">
+  <nav id="navigation" className="navbar navFixedTop navbar-expand-lg navbar-light bg-purp">
     <a className="navbar-brand" href="/">REACT</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
